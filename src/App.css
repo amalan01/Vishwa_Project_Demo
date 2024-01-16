@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.slider-item {
+  position: relative;
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff; /* Adjust text color as needed */
+}
+
+
+.text-overlay h1,
+.text-overlay h3,
+.text-overlay a {
+  margin: 0;
+}
+
+
+.text-overlay h3
+ {
+  font-family: 'Pacifico', cursive;
+}
+
+.text-overlay h1
+ {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Add this style to your existing CSS file or create a new one */
+.button-container {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.button-container::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #EB6D20 0%, #EB6D20 100%);
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.button-container:hover::before {
+  transform: translateY(-100%);
+}
+
+.button-container:hover .button-content {
+  color: #fff;
+}
+
+.button-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner_one-text-overlay {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #111111; /* Adjust text color as needed */
+  z-index: 1; /* Ensure the text appears above the image */
+}
+
+.banner_one-text-overlay h2,
+.banner_one-text-overlay h3 {
+  margin: 0;
+  padding: 10px;
+}
+
+.banner_one-text-overlay h2
+ {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+
+}
+
+.banner_one-text-overlay h1
+ {
+  font-family: 'Pacifico', cursive;
+
+}
+
+
+.banner_two-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-15%, -50%);
+  text-align: right;
+  color: #111111; /* Adjust text color as needed */
+  z-index: 1; /* Ensure the text appears above the image */
+}
+
+.banner_two-text-overlay h2,
+.banner_two-text-overlay h3 {
+  margin: 0;
+  padding: 10px;
+}
+
+.banner_two-text-overlay h2
+ {
+  font-family: 'Dancing Script', cursive;
+}
+
+.banner_two-text-overlay h1
+ {
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+}
+
+.product-card {
+  position: relative;
+}
+
+.button-up {
+  position: absolute;
+  bottom: -40px; /* Initial position set to hide the button */
+  right: 23%;
+  opacity: 0; /* Initial opacity set to hide the button */
+  transform: translateY(0); /* Initial transform to hide the button */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition for smooth animation */
+}
+
+.product-card:hover .button-yp {
+  bottom: 0; /* Hovered position to show the button */
+  opacity: 1; /* Make the button visible on hover */
+  transform: translateY(-100%); /* Lift the button with a bottom-up animation on hover */
+}
+
+.bestProductBorder{
+  transition: border 0.6s ease;
+}
+
+.bestProductBorder:hover {
+  border: 1px solid #EB6D20;
+}
+
+
